@@ -1,17 +1,31 @@
+/* General Body Style */
 body {
-
-    text-align: center;
+    font-family: 'Poppins', sans-serif;
     background: url('background.avif') no-repeat center center fixed;
     background-size: cover;
     color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
-    font-family: poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Vertically center content */
+    align-items: center;
+    /* Horizontally center content */
+    min-height: 100vh;
 }
 
 /* Profile Page */
 .container {
-    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: auto;
+    /* Increased max-width */
+    width: 300px;
+    /* Ensure it takes full width if screen is small */
     margin: 5px auto;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
@@ -19,14 +33,24 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     object-fit: cover;
-
 }
 
 .profile-img {
     width: 100px;
     border-radius: 50%;
+    margin-bottom: 15px;
 }
 
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+/* Button Styling */
 .button {
     display: block;
     margin: 10px;
@@ -35,10 +59,44 @@ body {
     color: rgb(254, 253, 253);
     text-decoration: none;
     border-radius: 5px;
-    
 }
 
+/* Footer Styles */
+footer {
+    background-color: #01070e;
+    color: #d1caca;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    margin-top: auto;
+}
 
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-link {
+    color: #82a1cf;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #f39c12;
+    text-decoration: underline;
+}
+
+/* Sticky Text Style */
 .sticky-text {
     position: fixed;
     top: 10%;
@@ -54,7 +112,7 @@ body {
     z-index: 1002;
 }
 
-/* Timer */
+/* Timer Container Style */
 .timer-container {
     position: fixed;
     top: 50%;
@@ -85,60 +143,12 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
+
 .continue-button:hover {
     background: #0056b3;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #01070e;
-    color: #d1caca;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 14px;
-    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-}
-
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.footer-content p {
-    margin: 5px 0;
-}
-
-.footer-link {
-    color: #82a1cf;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-    color: #f39c12; /* Hover effect color */
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    footer {
-        font-size: 12px;
-    }
-}
-
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f6f9;
-    margin: 0;
-    padding: 0;
-}
-
+/* Terms Page Styles */
 .terms-container {
     max-width: 800px;
     margin: 50px auto;
@@ -192,3 +202,8 @@ body {
     text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+    footer {
+        font-size: 12px;
+    }
+}
