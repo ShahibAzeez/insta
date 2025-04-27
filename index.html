@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=""Get high-quality, Free bundles of motivational, fitness, car, song, AI, and viral reels videos for your social media content. Also, explore Canva templates, motion graphics, and more">
+    <title>Start With 03</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Favicon for different devices -->
+
+    <!-- Basic Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Apple Devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Android Devices -->
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+
+    <!-- Web Manifest (Optional if you have Progressive Web App setup) -->
+    <!-- <link rel="manifest" href="site.webmanifest">  -->
+</head>
+
+<body>
+    <div class="container">
+        <img class="profile-img" src="profile.jpg" alt="Profile Picture">
+        <h1>Start With 03</h1>
+
+        <div class="social-links" style="margin-top: 10px;">
+            <a href="https://www.instagram.com/start.with.03" target="_blank" style="margin: 0 10px;">
+                <img src="https://s.magecdn.com/social/tc-instagram.svg" alt="Instagram"
+                    style="width: 30px; height: 30px; border-radius: 10px;">
+            </a>
+
+        </div>
+
+
+
+
+        <p class="description">Click on what you want</p>
+
+        <!-- Post Selection -->
+        <a class="button" href="page2.html" onclick="setPostLink(1)"> 1500+ Motivation Bundle</a>
+        <!-- <a class="button" href="page2.html" onclick="setPostLink(2)"> Error 404</a> -->
+        <!-- <a class="button" href="page2.html" onclick="setPostLink(3)"> Error 404</a> -->
+    </div>
+
+    <script>
+        function setPostLink(postNumber) {
+            const postLinks = {
+                1: "https://drive.google.com/drive/folders/1XZ00wKCxPruEpTyDmRxtLzP3GxPG3N1W",
+                2: "https://www.instagram.com/start.with.03",
+                3: "https://www.instagram.com/start.with.03"
+            };
+            localStorage.setItem("selectedPostLink", postLinks[postNumber]);
+        }
+    </script>
+    <footer>
+        <div class="footer-content">
+            <p>Made With ❤️ By <a href="https://www.instagram.com/shahib_azeez" target="_blank" class="footer-link">03 Dev Team</a></p>
+            <p><a href="terms.html" class="footer-link">Terms of Service</a></p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
