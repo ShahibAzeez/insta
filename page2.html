@@ -30,7 +30,7 @@
 
 </head>
 
-<body>
+<body class="body">
 
     <div class="sticky-text">Wait 5 Seconds To Support Us</div>
 
@@ -42,8 +42,31 @@
 
     </div>
 
+    <script>
+    let timeLeft = 5;
+    const timerElement = document.getElementById("timer");
 
-    <script src="script.js"></script>
+    // Fetch the selected post link from localStorage
+    let postLink = localStorage.getItem("selectedPostLink") || "https://default.link";
+
+    const countdown = setInterval(() => {
+        timeLeft--;
+        timerElement.textContent = `Time Left: ${timeLeft}s`;
+        if (timeLeft === 0) {
+            clearInterval(countdown);
+            timerElement.innerHTML = `<button class="continue-button" onclick="goToNextPage()">Continue</button>`;
+        }
+    }, 1000);
+
+    function goToNextPage() {
+        window.location.href = postLink;
+    }
+
+    function trackAdClick() {
+        window.open('https://ad-redirect-link.com', '_blank');
+    }
+</script>
+    
 </body>
 
 </html>
