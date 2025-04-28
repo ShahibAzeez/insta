@@ -14,9 +14,11 @@ body {
     /* Horizontally center content */
     min-height: 100vh;
 }
+
 .body {
     background-image: url(background.avif);
 }
+
 
 /* Profile Page */
 .container {
@@ -38,12 +40,15 @@ body {
     object-fit: cover;
     overflow: hidden;
 }
+
 h1 {
     color: #2C3E50;
 }
+
 .description {
-    color:#7f8c8d ;
+    color: #7f8c8d;
 }
+
 
 .profile-img {
     width: 100px;
@@ -51,25 +56,38 @@ h1 {
     margin-bottom: 15px;
 }
 
+
 h1 {
     font-size: 28px;
     margin-bottom: 15px;
 }
 
+
 .description {
     margin-top: 10px;
 }
 
+
 /* Button Styling */
-.button {
-    display: block;
-    margin: 10px;
+.container a.button {
+    display: inline-block;
+    /* Change from block to inline-block */
+    width: auto;
+    /* Let the content determine the width initially */
+    min-width: 250px;
+    /* Set a minimum width for all buttons */
     padding: 10px;
+    margin: 10px;
     background: rgb(22, 34, 18);
     color: rgb(254, 253, 253);
     text-decoration: none;
     border-radius: 5px;
+    text-align: center;
+    /* Center the text within the button */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
 }
+
 
 /* Footer Styles */
 footer {
@@ -83,6 +101,7 @@ footer {
     margin-top: auto;
 }
 
+
 .footer-content {
     display: flex;
     justify-content: center;
@@ -90,9 +109,11 @@ footer {
     flex-direction: column;
 }
 
+
 .footer-content p {
     margin: 5px 0;
 }
+
 
 .footer-link {
     color: #82a1cf;
@@ -101,10 +122,12 @@ footer {
     transition: color 0.3s ease;
 }
 
+
 .footer-link:hover {
     color: #f39c12;
     text-decoration: underline;
 }
+
 
 /* Sticky Text Style */
 .sticky-text {
@@ -121,6 +144,7 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 1002;
 }
+
 
 /* Timer Container Style */
 .timer-container {
@@ -142,6 +166,7 @@ footer {
     min-width: 100px;
 }
 
+
 /* Continue Button */
 .continue-button {
     background: #007bff;
@@ -154,9 +179,11 @@ footer {
     transition: 0.3s;
 }
 
+
 .continue-button:hover {
     background: #0056b3;
 }
+
 
 /* Terms Page Styles */
 .terms-container {
@@ -169,10 +196,12 @@ footer {
     overflow: hidden;
 }
 
+
 .terms-header {
     text-align: center;
     margin-bottom: 30px;
 }
+
 
 .terms-header h1 {
     font-size: 36px;
@@ -180,19 +209,23 @@ footer {
     font-weight: 600;
 }
 
+
 .terms-content {
     padding: 0 20px;
 }
 
+
 .terms-section {
     margin-bottom: 25px;
 }
+
 
 .terms-section h2 {
     font-size: 24px;
     color: #2C3E50;
     margin-bottom: 10px;
 }
+
 
 .terms-section p {
     font-size: 16px;
@@ -201,16 +234,19 @@ footer {
     text-align: justify;
 }
 
+
 .contact-link {
     color: #82a1cf;
     text-decoration: none;
     font-weight: bold;
 }
 
+
 .contact-link:hover {
     color: #f39c12;
     text-decoration: underline;
 }
+
 
 @media (max-width: 768px) {
     footer {
