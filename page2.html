@@ -1,72 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-8639711686131039">
-    <title>Start with 03 </title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Wait to Continue - 03 For Creators</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8639711686131039"
-        crossorigin="anonymous"></script>
-    <!-- Favicon for different devices -->
-
-    <!-- Basic Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- Apple Devices -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-
-    <!-- Android Devices -->
-    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
-
-    <!-- Web Manifest (Optional if you have Progressive Web App setup) -->
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-
-
+     crossorigin="anonymous"></script>
+    <style>
+        .waiting-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+        }
+        .sticky-text {
+            background-color: #f44336;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .timer-container {
+            background-color: #fff;
+            color: #333;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .continue-button {
+            background-color: #64b5f6;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.2s ease;
+        }
+        .continue-button:hover {
+            background-color: #42a5f5;
+        }
+    </style>
 </head>
+<body>
 
-<body class="body">
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                </div>
+            <div class="search-wrapper">
+                </div>
+        </header>
 
-    <div class="sticky-text">Wait 5 Seconds To Support Us</div>
+        <main>
+            <div class="waiting-container">
+                <div class="sticky-text">Wait 5 Seconds To Support Us</div>
+                <div class="timer-container" id="timer">Time Left: 5s</div>
+                <button class="continue-button" id="continueBtn" style="display: none;">Continue</button>
+            </div>
+        </main>
 
-
-    <div class="timer-container" id="timer">Time Left: 5s</div>
-
-
-    <div class="blog-container">
-
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 03 Dev Team. All rights reserved.</p>
+                <nav>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+            </div>
+        </footer>
     </div>
 
     <script>
-    let timeLeft = 5;
-    const timerElement = document.getElementById("timer");
+        let timeLeft = 5;
+        const timerElement = document.getElementById("timer");
+        const continueButton = document.getElementById("continueBtn");
+        const reelParam = new URLSearchParams(window.location.search).get('reel');
+        const reelLinks = {
+            motivation: "https://drive.google.com/drive/folders/1XZ00wKCxPruEpTyDmRxtLzP3GxPG3N1W",
+            fitness: "https://drive.google.com/drive/folders/1n9s_PYqWku13IDw1SwlsnVmH5rfXR_A8",
+            artcraft: "https://drive.google.com/file/d/14K0pHj8XSZ2kllJTaGN2Gs8u3Dp86utj/view?usp=drivesdk",
+            cricket: "https://drive.google.com/drive/folders/19ZOdWVrqXqH3G_RGIVDKIQ_THtAv3zao",
+            hotgirls: "https://drive.google.com/drive/folders/16VzqOSbmQwzx31US1xcm3_j_4shoUqxU",
+            funny2d: "https://drive.google.com/drive/folders/16lN0H-oSl6MUSFbkgR6hKZD4oA1Ylo4V",
+            aiavatar: "https://drive.google.com/drive/folders/1jxua6bOOb7yErLBynTc_d_6Q5MKkuxMy",
+            aitech: "https://drive.google.com/drive/folders/1YKqZJe120qfeXoGIflkgjRC8z4-pdVks",
+            islamic: "https://drive.google.com/drive/folders/1XfuZBqpSPGmMVwM4TUPn3dzUdW-T3PuC",
+            satisfying: "https://drive.google.com/drive/folders/1jzhyjsiKPRWJSZZSsasz4qq8Kq9qapV5",
+            movieexplain: "https://drive.google.com/drive/folders/1dVjqB7m_IKHIZ2-PN8PmNiXhC4jRVFbU",
+            attitude: "https://drive.google.com/drive/folders/1-20KuM_Q8N41AZ3urB9OIsE4RwEqg33o",
+            hindusantan: "https://drive.google.com/drive/folders/1YxhudhVJ_1GW4pvATgJGuzzyaxNPR5mU",
+            shinchan: "https://drive.google.com/drive/folders/1Hyk3ZH2l3_3JQYFvzWiuEuND4_gYg7Pv",
+            viralshort: "https://drive.google.com/drive/folders/1C2es7ujnrFvas4_b8eYJP6DmAkpwAxMj",
+            virallong: "https://drive.google.com/drive/folders/1h5q_Bd1OoD4dAeZVtNUoqRzkq-V9DTke",
+            aesthetic: "https://drive.google.com/drive/folders/1abXzzLDuRm_WGrwGz-Zh5O798-JKvJAd",
+            toolstips: "https://drive.google.com/drive/folders/1V43pBAdaa4Xhtzvc5blXkeYMDr7RSa7l",
+            caredits: "https://drive.google.com/drive/folders/1ev4YgEAw55izgE5mO6NTe0fswrrQTTva",
+            luxurycar: "https://drive.google.com/drive/folders/1hpwetf4zqIs1Yt0R0g8dBREDJ_oN61oW",
+            space: "https://drive.google.com/drive/folders/1ebHNOPHZcMWe1KBetMVFc0YqzXjtHAbh",
+            luxury: "https://drive.google.com/drive/folders/1hpwetf4zqIs1Yt0R0g8dBREDJ_oN61oW",
+            nature: "https://drive.google.com/drive/folders/1maID_DgrGhrXMvCs7d7JtGPorOmMfbKH",
+            sigmamale: "https://drive.google.com/drive/folders/1-20KuM_Q8N41AZ3urB9OIsE4RwEqg33o",
+            cartoonfunny: "https://drive.google.com/drive/folders/1dHDKZe6HIDnDpX4jXMfow3VEXYxRJgY5",
+            emotionaledits: "https://drive.google.com/drive/folders/191Oh9QVYDCXKX0yIoy7_mGV7-D6BT9Jy"
+        };
+        let postLink = reelLinks[reelParam] || "https://default.link";
 
-    // Fetch the selected post link from localStorage
-    let postLink = localStorage.getItem("selectedPostLink") || "https://default.link";
+        const countdown = setInterval(() => {
+            timeLeft--;
+            timerElement.textContent = `Time Left: ${timeLeft}s`;
+            if (timeLeft === 0) {
+                clearInterval(countdown);
+                timerElement.style.display = 'none';
+                continueButton.style.display = 'block';
+                continueButton.addEventListener('click', goToNextPage);
+            }
+        }, 1000);
 
-    const countdown = setInterval(() => {
-        timeLeft--;
-        timerElement.textContent = `Time Left: ${timeLeft}s`;
-        if (timeLeft === 0) {
-            clearInterval(countdown);
-            timerElement.innerHTML = `<button class="continue-button" onclick="goToNextPage()">Continue</button>`;
+        function goToNextPage() {
+            window.location.href = postLink;
         }
-    }, 1000);
+    </script>
 
-    function goToNextPage() {
-        window.location.href = postLink;
-    }
-
-    function trackAdClick() {
-        window.open('https://ad-redirect-link.com', '_blank');
-    }
-</script>
-    
 </body>
-
 </html>

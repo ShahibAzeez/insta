@@ -1,0 +1,243 @@
+/* Modern & Stylish CSS */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
+    overflow-x: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #272d33;
+    color: #fff;
+    padding-top: 20px;
+    z-index: 100;
+    transition: left 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+.sidebar .logo-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #383e45;
+}
+
+.sidebar .logo-container i {
+    margin-right: 10px;
+    color: #64b5f6;
+}
+
+.sidebar .logo-container span {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.sidebar .close-btn {
+    margin-left: auto;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.sidebar .nav-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebar .nav-links li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .nav-links li a i {
+    margin-right: 10px;
+    color: #888;
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar .nav-links li a.active,
+.sidebar .nav-links li a:hover {
+    background-color: #383e45;
+    color: #64b5f6;
+}
+
+.main-content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+header .menu-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #555;
+}
+
+header .search-wrapper {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+}
+
+header .search-wrapper i {
+    color: #777;
+    margin-right: 10px;
+}
+
+header .search-wrapper input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+main {
+    padding: 20px;
+}
+
+.latest-uploads .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.latest-uploads .section-header h2 {
+    font-size: 1.75rem;
+    color: #333;
+    margin: 0;
+}
+
+.latest-uploads .section-header .filter-options label {
+    margin-left: 20px;
+    font-size: 0.9rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.latest-uploads .section-header .filter-options label i {
+    margin-right: 5px;
+    color: #64b5f6;
+}
+
+.latest-uploads .uploads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.latest-uploads .upload-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.latest-uploads .upload-card .card-info {
+    padding: 20px;
+}
+
+.latest-uploads .upload-card .card-info h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.latest-uploads .upload-card .card-info p {
+    color: #777;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.latest-uploads .upload-card .card-info a {
+    color: #64b5f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.latest-uploads .upload-card .card-info a i {
+    margin-left: 5px;
+}
+
+.latest-uploads .upload-card .card-thumbnail {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background-color: #272d33;
+    color: #ddd;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-content nav a {
+    color: #888;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+footer .footer-content nav a:hover {
+    color: #eee;
+}
+
+footer .footer-content p {
+    font-size: 0.9rem;
+}
+
+body.sidebar-open .main-content {
+    margin-left: 300px;
+}
+
+body.sidebar-open .sidebar {
+    left: 0;
+}
+
+/* Placeholder for thumbnails */
+/* You would replace these with actual image URLs */

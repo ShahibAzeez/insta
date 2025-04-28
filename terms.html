@@ -4,89 +4,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-8639711686131039">
-    <meta name="description" content="Terms and conditions for content usage on Start With 03 website.">
-    <title>Terms of Service - Start With 03</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Terms of Service - 03 For Creators</title>
+    <meta name="description"
+        content="Read the terms and conditions for using the 03 Dev Team website, including content ownership, usage guidelines, and our policies.">
+    <meta name="keywords"
+        content="terms of service, terms and conditions, website policy, usage terms, content ownership, 03 Dev Team">
+    <meta name="author" content="03 Dev Team">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8639711686131039"
-        crossorigin="anonymous"></script>
-    <!-- Favicon for different devices -->
+     crossorigin="anonymous"></script>
+    <!-- Standard Favicon -->
+    <link rel="icon" href="/favicon.ico" style="border-radius: 50%" type="image/x-icon">
 
-    <!-- Basic Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- PNG Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" style="border-radius: 50%" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" style="border-radius: 50%" href="/favicon-32x32.png">
 
-    <!-- Apple Devices -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" style="border-radius: 50%" href="/apple-touch-icon.png">
 
-    <!-- Android Devices -->
-    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" style="border-radius: 50%" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" style="border-radius: 50%" href="/android-chrome-512x512.png">
 
-    <!-- Web Manifest (Optional if you have Progressive Web App setup) -->
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .terms-container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .terms-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .terms-header h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .terms-content h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .terms-content p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .terms-content a {
+            color: #64b5f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .terms-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="terms-container">
-        <header class="terms-header">
-            <h1>Terms of Service</h1>
+
+    <div class="sidebar">
+        <div class="logo-container">
+            <i class="fas fa-code fa-lg"></i>
+            <span>03 Dev Team</span>
+            <i class="fas fa-times close-btn" onclick="toggleSidebar()"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="reels.html"><i class="fas fa-film"></i> Reels Bundles</a></li>
+            <li><a href="tools.html"><i class="fas fa-robot"></i> AI Tools</a></li>
+            <li><a href="apk.html" ><i class="fas fa-mobile-alt"></i> APK Downloads</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="#" class="active"><i class="fas fa-file-alt"></i> Terms of Service</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <i class="fas fa-bars" onclick="toggleSidebar()"></i>
+            </div>
+            <!-- <div class="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search terms...">
+            </div> -->
         </header>
 
-        <div class="terms-content">
-            <section class="terms-section">
-                <h2>Content Ownership Disclaimer</h2>
-                <p>The content provided on this website, including but not limited to video bundles, templates, and
-                    other
-                    digital assets, may be created and uploaded by third-party users or the website's administrators.
-                    All
-                    content remains the property of its respective creator unless explicitly stated otherwise. By
-                    accessing this
-                    content, you acknowledge that the ownership of the uploaded content belongs to the respective
-                    content
-                    creator, and not the website itself.</p>
-            </section>
+        <main>
+            <div class="terms-container">
+                <header class="terms-header">
+                    <h1>Terms of Service</h1>
+                </header>
+                <div class="terms-content">
+                    <section class="terms-section">
+                        <h2>Content Ownership Disclaimer</h2>
+                        <p>The content provided on this website, including but not limited to video bundles, templates,
+                            and other digital assets, may be created and uploaded by third-party users or the website's
+                            administrators. All content remains the property of its respective creator unless explicitly
+                            stated otherwise. By accessing this content, you acknowledge that the ownership of the
+                            uploaded content belongs to the respective content creator, and not the website itself.</p>
+                    </section>
 
-            <section class="terms-section">
-                <h2>Content Upload</h2>
-                <p>Users are permitted to upload content to the website. However, they must own the rights to the
-                    content or have
-                    obtained necessary permissions to share it. The website will not be held responsible for any
-                    copyright
-                    infringement.</p>
-            </section>
+                    <section class="terms-section">
+                        <h2>Content Upload</h2>
+                        <p>Users are permitted to upload content to the website. However, they must own the rights to
+                            the content or have obtained necessary permissions to share it. The website will not be held
+                            responsible for any copyright infringement.</p>
+                    </section>
 
-            <section class="terms-section">
-                <h2>Content Usage</h2>
-                <p>Uploaded content may be used by other users for personal or commercial purposes, depending on the
-                    type of
-                    license granted by the original uploader.</p>
-            </section>
+                    <section class="terms-section">
+                        <h2>Content Usage</h2>
+                        <p>Uploaded content may be used by other users for personal or commercial purposes, depending on
+                            the type of license granted by the original uploader.</p>
+                    </section>
 
-            <section class="terms-section">
-                <h2>Third-Party Content</h2>
-                <p>Any third-party content uploaded is the responsibility of the user who uploaded it. We do not take
-                    responsibility for any copyright violations or disputes arising from such content.</p>
-            </section>
+                    <section class="terms-section">
+                        <h2>Third-Party Content</h2>
+                        <p>Any third-party content uploaded is the responsibility of the user who uploaded it. We do not
+                            take responsibility for any copyright violations or disputes arising from such content.</p>
+                    </section>
 
-            <section class="terms-section">
-                <h2>Content Removal</h2>
-                <p>If you believe your content is being used without permission, please contact us, and we will take
-                    appropriate action as per the copyright infringement laws.</p>
-            </section>
+                    <section class="terms-section">
+                        <h2>Content Removal</h2>
+                        <p>If you believe your content is being used without permission, please <a
+                                href="contact.html">contact us</a>, and we will take appropriate action as per
+                            the copyright infringement laws.</p>
+                    </section>
 
-            <section class="terms-section">
-                <h2>Contact Us</h2>
-                <p>If you have any questions regarding the content usage or ownership, feel free to contact us at
-                    <p>Email: <a href="mailto:shahibazeez03@gmail.com">shahibazeez03@gmail.com</a></p>
-                </p>
+                    <section class="terms-section">
+                        <h2>Contact Us</h2>
+                        <p>If you have any questions regarding the content usage or ownership, feel free to contact us
+                            at <a href="mailto:shahibazeez03@gmail.com">email me</a>.</p>
+                    </section>
+                </div>
+            </div>
+        </main>
 
-            </section>
-        </div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 03 Dev Team. All rights reserved.</p>
+                <nav>
+                    <a href="#">Terms of Service</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+            </div>
+        </footer>
     </div>
+
+    <script>
+        function toggleSidebar() {
+            document.body.classList.toggle('sidebar-open');
+        }
+    </script>
+
 </body>
 
 </html>

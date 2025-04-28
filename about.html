@@ -4,49 +4,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Us page for 03 Dev Team - Empowering content creators with free and copyright-free resources">
-    <title>About Us - 03 Dev Team</title>
-    <link rel="stylesheet" href="stylesus.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <meta name="google-adsense-account" content="ca-pub-8639711686131039">
+    <title>About 03 For Creators - Our Mission & Vision</title>
+    <meta name="description"
+        content="Learn more about 03 For Creators, our mission to provide valuable content and innovative tools, and our vision for the future of online creativity and productivity.">
+    <meta name="keywords"
+        content="about us, 03 For Creators, mission, vision, team, online content, AI, reels, development">
+    <meta name="author" content="03 For Creators">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8639711686131039"
-        crossorigin="anonymous"></script>
+     crossorigin="anonymous"></script>
+    <!-- Standard Favicon -->
+    <link rel="icon" href="/favicon.ico"style="border-radius: 50%" type="image/x-icon">
+
+    <!-- PNG Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16"style="border-radius: 50%" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32"style="border-radius: 50%" href="/favicon-32x32.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180"style="border-radius: 50%" href="/apple-touch-icon.png">
+
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192"style="border-radius: 50%" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512"style="border-radius: 50%" href="/android-chrome-512x512.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .about-container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .about-container h1 {
+            font-size: 2.5rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about-content h2 {
+            font-size: 1.75rem;
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .about-content p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .about-content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-content ul li {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.7;
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .about-content ul li:before {
+            content: '\f058';
+            /* Font Awesome checkmark icon */
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #64b5f6;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>About Us</h1>
 
-        <div class="about-content">
-            <h2>Our Mission</h2>
-            <p>At 03 Dev Team, our mission is to empower new and aspiring content creators with high-quality resources, free tools, and support to make their content creation journey easier and more successful. We believe in providing copyright-free and easy-to-use resources that can be incorporated into any content, from social media posts to YouTube videos.</p>
-
-            <h3>What We Offer</h3>
-            <p>We offer a variety of free and copyright-free content creation resources, including:</p>
-            <ul>
-                <li>Customizable thumbnails</li>
-                <li>Canva templates</li>
-                <li>Royalty-free songs and background music</li>
-                <li>Memes packs</li>
-                <li>Funny voices and memes voices</li>
-                <li>Reels packs</li>
-                <li>And many more resources for content creators!</li>
-            </ul>
-
-            <h3>AI Tools for Content Creation</h3>
-            <p>In addition to traditional resources, we also introduce various AI-powered tools that can help content creators streamline their process. From video editing to voiceover generation, these tools are designed to make your content creation journey smoother and more efficient. We are committed to keeping creators informed about the latest tools that can help them grow.</p>
-
-            <h3>Our Goal</h3>
-            <p>Our goal is to make it easier for content creators to access all the necessary materials, free of charge, and help them get one step closer to achieving their creative dreams. We work hard to provide the best quality material and continuously update our resources to keep up with the latest trends in the content creation world.</p>
+    <div class="sidebar">
+        <div class="logo-container">
+            <i class="fas fa-code fa-lg"></i>
+            <span>03 Dev Team</span>
+            <i class="fas fa-times close-btn" onclick="toggleSidebar()"></i>
         </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="reels.html"><i class="fas fa-film"></i> Reels Bundles</a></li>
+            <li><a href="tools.html"><i class="fas fa-robot"></i> AI Tools</a></li>
+            <li><a href="apk.html" ><i class="fas fa-mobile-alt"></i> APK Downloads</a></li>
+            <li><a href="#" class="active"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <i class="fas fa-bars" onclick="toggleSidebar()"></i>
+            </div>
+            <!-- <div class="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div> -->
+        </header>
+
+        <main>
+            <div class="about-container">
+                <h1>About Us</h1>
+                <div class="about-content">
+                    <h2>Our Mission</h2>
+                    <p>At 03 For Creators, our mission is to empower new and aspiring content creators with high-quality
+                        resources, free tools, and support to make their content creation journey easier and more
+                        successful. We believe in providing copyright-free and easy-to-use resources that can be
+                        incorporated into any content, from social media posts to YouTube videos.</p>
+
+                    <h2>What We Offer</h2>
+                    <p>We offer a variety of free and copyright-free content creation resources, including:</p>
+                    <ul>
+                        <li>Customizable thumbnails</li>
+                        <li>Canva templates</li>
+                        <li>Royalty-free songs and background music</li>
+                        <li>Memes packs</li>
+                        <li>Funny voices and memes voices</li>
+                        <li>Reels packs</li>
+                        <li>And many more resources for content creators!</li>
+                    </ul>
+
+                    <h2>AI Tools for Content Creation</h2>
+                    <p>In addition to traditional resources, we also introduce various AI-powered tools that can help
+                        content creators streamline their process. From video editing to voiceover generation, these
+                        tools are designed to make your content creation journey smoother and more efficient. We are
+                        committed to keeping creators informed about the latest tools that can help them grow.</p>
+
+                    <h2>Our Goal</h2>
+                    <p>Our goal is to make it easier for content creators to access all the necessary materials, free of
+                        charge, and help them get one step closer to achieving their creative dreams. We work hard to
+                        provide the best quality material and continuously update our resources to keep up with the
+                        latest trends in the content creation world.</p>
+                </div>
+            </div>
+        </main>
 
         <footer>
             <div class="footer-content">
-                <p>Made With ❤️ By <a href="https://www.instagram.com/shahib_azeez" target="_blank" class="footer-link">03 Dev Team</a></p>
-                <p><a href="terms.html" class="footer-link">Terms of Service</a></p>
+                <p>&copy; 2025 03 Dev Team. All rights reserved.</p>
+                <nav>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="#">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
             </div>
         </footer>
     </div>
+
+    <script>
+        function toggleSidebar() {
+            document.body.classList.toggle('sidebar-open');
+        }
+    </script>
+
 </body>
 
 </html>

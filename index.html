@@ -4,127 +4,436 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 For Creators - Modern Content Hub for Reels, AI Tools & More</title>
     <meta name="description"
-        content="Get high-quality bundles of motivational, fitness, car, song, AI, and viral reels videos for your social media content. Also, explore Canva templates, motion graphics, and more">
-    <title>Start With 03</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        content="Explore the latest reels, trending AI tools, and valuable resources at 03 For Creators. Discover inspiring content and innovative tools to enhance your creativity and productivity.">
+    <meta name="keywords"
+        content="reels, short videos, AI tools, artificial intelligence, content creation, inspiration, productivity, trending, latest">
+    <meta name="author" content="03 For Creators">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8639711686131039"
-        crossorigin="anonymous"></script>
-        <meta name="google-adsense-account" content="ca-pub-8639711686131039">
+     crossorigin="anonymous"></script>
+    <!-- Standard Favicon -->
+    <link rel="icon" href="/favicon.ico" style="border-radius:50%;" type="image/x-icon">
 
-    <!-- Favicon for different devices -->
+    <!-- PNG Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" style="border-radius: 50%" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" style="border-radius: 50%" href="/favicon-32x32.png">
 
-    <!-- Basic Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" style="border-radius: 50%" href="/apple-touch-icon.png">
 
-    <!-- Apple Devices -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" style="border-radius: 50%" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" style="border-radius: 50%" href="/android-chrome-512x512.png">
 
-    <!-- Android Devices -->
-    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
 
-    <!-- Web Manifest (Optional if you have Progressive Web App setup) -->
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Modern Styles (aapki modern-style.css mein honge) */
+        .main-content {
+            margin-left: 0;
+            /* Sidebar default mein close rahega */
+            transition: margin-left 0.3s ease;
+        }
+
+        .sidebar-open .main-content {
+            margin-left: 250px;
+            /* Sidebar open hone par */
+        }
+
+        .sidebar {
+            width: 250px;
+            position: fixed;
+            left: -250px;
+            top: 0;
+            height: 100%;
+            background-color: #222;
+            color: #fff;
+            padding-top: 30px;
+            transition: left 0.3s ease;
+            z-index: 100;
+        }
+
+        .sidebar-open .sidebar {
+            left: 0;
+        }
+
+        .logo-container {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo-container i {
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .nav-links li a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #eee;
+            transition: background-color 0.2s ease;
+        }
+
+        .nav-links li a:hover {
+            background-color: #333;
+        }
+
+        .nav-links li a.active {
+            background-color: #444;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        header {
+            background-color: #fff;
+            color: #333;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .menu-toggle i {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .search-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-wrapper i {
+            font-size: 1.2rem;
+            margin-right: 10px;
+            color: #777;
+        }
+
+        .search-wrapper input {
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .hero-section {
+            background-color: #f9f9f9;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .hero-section p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #64b5f6;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #42a5f5;
+        }
+
+        .uploads-section h2 {
+            font-size: 1.75rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .uploads-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .upload-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-thumbnail {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-info {
+            padding: 20px;
+        }
+
+        .card-info h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-info p {
+            color: #777;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .card-info a {
+            color: #64b5f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .card-info a i {
+            margin-left: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #eee;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .footer-content {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-content nav a {
+            color: #eee;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-content nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sidebar Open Class */
+        body.sidebar-open {
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <img class="profile-img" src="profile.jpg" alt="Profile Picture">
-        <h1>Start With 03</h1>
-
-        <div class="social-links" style="margin-top: 10px;">
-            <a href="https://www.instagram.com/start.with.03" target="_blank" style="margin: 0 10px;">
-                <img src="https://s.magecdn.com/social/tc-instagram.svg" alt="Instagram"
-                    style="width: 30px; height: 30px; border-radius: 10px;">
-            </a>
+    <div class="sidebar">
+        <div class="logo-container">
+            <i class="fas fa-code fa-lg"></i>
+            <span>03 For Creators</span>
+            <i class="fas fa-times close-btn" onclick="toggleSidebar()"></i>
         </div>
-
-        <p class="description">Click on what you want</p>
-
-        <!-- Post Selection -->
-        <a class="button" href="page2.html" onclick="setPostLink(1)"> 1500+ Motivation Reels</a>
-
-
-        <a class="button" href="page2.html" onclick="setPostLink(2)"> 2200+ GYM And Fitness</a>
-        <a class="button" href="page2.html" onclick="setPostLink(3)"> 4000+ Art and Craft Reels</a>
-        <a class="button" href="page2.html" onclick="setPostLink(4)">250+ Cricket Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(5)">13000+ Hot And Beautifull Girls Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(6)">550+ 2D Animation Funny Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(7)">500+ AI Avatar Reels Bundle </a>
-        <a class="button" href="page2.html" onclick="setPostLink(8)">500+ AI Tech Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(9)">500+ Islamic Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(10)">500+ Satisfying Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(11)">500+ Movie Explained Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(12)">150+ Attitude Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(13)"> 250+ Hindu Santan Reels</a>
-        <a class="button" href="page2.html" onclick="setPostLink(14)">500+ Shin Chan Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(15)">200+ Viral Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(16)">300+ Viral Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(17)">550+ Aesthetic Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(18)">1200+ Tools Tips Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(19)">2500+ Car Edids Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(20)">2500+ Luxury Car Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(21)">1000+ Space and Univers Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(22)">2500+ Luxury Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(23)">2000+ Nature Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(24)">3000+ Sigma Male Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(25)">250+ Cartoon Funny Reels </a>
-        <a class="button" href="page2.html" onclick="setPostLink(26)">1000+ Emaotional Edits Reels </a>
+        <ul class="nav-links">
+            <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="reels.html"><i class="fas fa-film"></i> Reels Bundles</a></li>
+            <li><a href="tools.html"><i class="fas fa-robot"></i> AI Tools</a></li>
+            <li><a href="apk.html"><i class="fas fa-mobile-alt"></i> APK Downloads</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            <li><a href="terms.html"><i class="fas fa-file-alt"></i> Terms of Service</a></li>
+        </ul>
     </div>
 
-    <!-- Footer Content -->
-    <footer>
-        <div class="footer-content">
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <i class="fas fa-bars" onclick="toggleSidebar()"></i>
+            </div>
+            <div class="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search Trandigs...">
+            </div>
+        </header>
 
-            <p>
-                <a href="terms.html" class="footer-link">Terms of Service</a>
-                <a href="about.html" class="footer-link">About Us</a>
-                <a href="contact.html" class="footer-link">Contact Us</a>
-            </p>
-            <p>Made With ❤️ By <a href="https://www.instagram.com/shahib_azeez" target="_blank" class="footer-link">03
-                    Dev Team</a></p>
-        </div>
-    </footer>
+        <main>
+            <section class="hero-section">
+                <h1>Welcome to 03 For Creators</h1>
+                <p>Explore the latest and greatest content in reels, AI tools, and more!</p>
+
+            </section>
+
+            <section class="uploads-section">
+                <h2>Tranding On Instagram</h2>
+                <div class="uploads-grid">
+                    <div class="upload-card">
+                        <div class="card-thumbnail" style="background-image: url('capcut.png')"></div>
+                        <div class="card-info">
+                            <h3>Capcut Mod Apk</h3>
+                            <p>CapCut is a free, all-in-one video editing tool. It's packed with everything necessary to
+                                create high- quality, visually appealing videos and graphics..</p>
+                            <a href="https://getmodsapk.com/cutout-mod-apk/download" target="_blank">Download Now <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="upload-card">
+                        <div class="card-thumbnail" style="background-image: url('picsverse.jpg')"></div>
+                        <div class=" card-info">
+                            <h3>PixVerse</h3>
+                            <p>Turn your pictures or text into dynamic viral videos in seconds! Simple to use, limitless
+                                creativity, and guaranteed to ignite your social circle!.</p>
+                            <a href="https://app.pixverse.ai">Explore <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="upload-card">
+                        <div class="card-thumbnail" style="background-image: url('ChatGPT-Logo.png')"></div>
+                        <div class="card-info">
+                            <h3>ChatGPT Premium APK</h3>
+                            <p>ChatGPT helps you get answers, find inspiration and be more productive. It is free to use
+                                and
+                                easy to try. Just ask and ChatGPT can help with writing..</p>
+                            <a href="https://getmodsapk.com/chatgpt-premium-apk/download">Download Now <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="upload-card">
+                        <div class="card-thumbnail" style="background-image: url('runwayml.jpg')"></div>
+                        <div class="card-info">
+                            <h3>RunwayML</h3>
+                            <p>Runway Studios is the entertainment and production arm of Runway, dedicated to producing
+                                and funding films, documentaries, printed publications, music videos ...</p>
+                            <a href="https://runwayml.com/">Explore <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="upload-card">
+                        <div class="card-thumbnail" style="background-image: url('ChatGPT-Logo.png')"></div>
+                        <div class="card-info">
+                            <h3>ChatGPT - AI Chatbot</h3>
+                            <p>Interact with the powerful AI for text generation and more.</p>
+                            <a href="https://openai.com/chatgpt" target="_blank">Explore <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="upload-card">
+                        <div class="card-thumbnail" style="background-image: url('Midjourney_Emblem.png')"></div>
+                        <div class="card-info">
+                            <h3>Midjourney - AI Image Gen</h3>
+                            <p>Create stunning images from text prompts with this AI tool.</p>
+                            <a href="https://www.midjourney.com/" target="_blank">Explore <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="upload-card">
+                        <div class="card-thumbnail" style="background-image: url('pictory.png')"></div>
+                        <div class="card-info">
+                            <h3>Pictory.ai - Video Editing</h3>
+                            <p>Easily convert your long content into engaging short videos.</p>
+                            <a href="https://pictory.ai/" target="_blank">Explore <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="upload-card">
+                        <div class="card-thumbnail" style="background-image: url('jasperai.jpg')"></div>
+                        <div class="card-info">
+                            <h3>Jasper AI</h3>
+                            <p>Jasper is the purpose-built generative AI platform for marketing.
+                                Built on a foundation of enterprise trust, Jasper deeply understands..</p>
+                            <a href="https://www.jasper.ai/">Explore <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="upload-card">
+                        <div class="card-thumbnail" style="background-image: url('murfai.png')"></div>
+                        <div class="card-info">
+                            <h3>Murf AI - Voiceover Gen</h3>
+                            <p>Generate realistic AI voiceovers for your video projects.</p>
+                            <a href="https://murf.ai/" target="_blank">Explore <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="upload-card">
+                        <div class="card-thumbnail" style="background-image: url('vista.png')"></div>
+                        <div class="card-info">
+                            <h3> Vista Social</h3>
+                            <p>Manage Your Social Media Posts — Find, Collaborate, Schedule and Boost Content for All Your Social Channels. Content Finder..</p>
+                            <a href="https://vistasocial.com/">Explore <i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 03 Dev Team. All rights reserved.</p>
+                <nav>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
 
     <script>
-        function setPostLink(postNumber) {
-            const postLinks = {
-                1: "https://drive.google.com/drive/folders/1XZ00wKCxPruEpTyDmRxtLzP3GxPG3N1W",
-                2: "https://drive.google.com/drive/folders/1n9s_PYqWku13IDw1SwlsnVmH5rfXR_A8",
-                3: "https://drive.google.com/file/d/14K0pHj8XSZ2kllJTaGN2Gs8u3Dp86utj/view?usp=drivesdk",
-                4: "https://drive.google.com/drive/folders/19ZOdWVrqXqH3G_RGIVDKIQ_THtAv3zao",
-                5: "https://drive.google.com/drive/folders/16VzqOSbmQwzx31US1xcm3_j_4shoUqxU",
-                6: "https://drive.google.com/drive/folders/16lN0H-oSl6MUSFbkgR6hKZD4oA1Ylo4V",
-                7: "https://drive.google.com/drive/folders/1jxua6bOOb7yErLBynTc_d_6Q5MKkuxMy",
-                8: "https://drive.google.com/drive/folders/1YKqZJe120qfeXoGIflkgjRC8z4-pdVks",
-                9: "https://drive.google.com/drive/folders/1XfuZBqpSPGmMVwM4TUPn3dzUdW-T3PuC",
-                10: "https://drive.google.com/drive/folders/1jzhyjsiKPRWJSZZSsasz4qq8Kq9qapV5",
-                11: "https://drive.google.com/drive/folders/1dVjqB7m_IKHIZ2-PN8PmNiXhC4jRVFbU",
-                12: "https://drive.google.com/drive/folders/1-20KuM_Q8N41AZ3urB9OIsE4RwEqg33o",
-                13: "https://drive.google.com/drive/folders/1YxhudhVJ_1GW4pvATgJGuzzyaxNPR5mU",
-                14: "https://drive.google.com/drive/folders/1Hyk3ZH2l3_3JQYFvzWiuEuND4_gYg7Pv",
-                15: "https://drive.google.com/drive/folders/1C2es7ujnrFvas4_b8eYJP6DmAkpwAxMj",
-                16: "https://drive.google.com/drive/folders/1h5q_Bd1OoD4dAeZVtNUoqRzkq-V9DTke",
-                17: "https://drive.google.com/drive/folders/1abXzzLDuRm_WGrwGz-Zh5O798-JKvJAd",
-                18: "https://drive.google.com/drive/folders/1V43pBAdaa4Xhtzvc5blXkeYMDr7RSa7l",
-                19: "https://drive.google.com/drive/folders/1ev4YgEAw55izgE5mO6NTe0fswrrQTTva",
-                20: "https://drive.google.com/drive/folders/1hpwetf4zqIs1Yt0R0g8dBREDJ_oN61oW",
-                21: "https://drive.google.com/drive/folders/1ebHNOPHZcMWe1KBetMVFc0YqzXjtHAbh",
-                22: "https://drive.google.com/drive/folders/1hpwetf4zqIs1Yt0R0g8dBREDJ_oN61oW",
-                23: "https://drive.google.com/drive/folders/1maID_DgrGhrXMvCs7d7JtGPorOmMfbKH",
-                24: "https://drive.google.com/drive/folders/1-20KuM_Q8N41AZ3urB9OIsE4RwEqg33o",
-                25: "https://drive.google.com/drive/folders/1dHDKZe6HIDnDpX4jXMfow3VEXYxRJgY5",
-                26: "https://drive.google.com/drive/folders/191Oh9QVYDCXKX0yIoy7_mGV7-D6BT9Jy"
-            };
-            localStorage.setItem("selectedPostLink", postLinks[postNumber]);
+        function toggleSidebar() {
+            document.body.classList.toggle('sidebar-open');
         }
+
+        const searchInput = document.querySelector('header .search-wrapper input');
+        const uploadCards = document.querySelectorAll('.uploads-grid .upload-card');
+
+        searchInput.addEventListener('input', function () {
+            const query = this.value.toLowerCase();
+            uploadCards.forEach(card => {
+                const title = card.querySelector('.card-info h3').textContent.toLowerCase();
+                const description = card.querySelector('.card-info p').textContent.toLowerCase();
+                if (title.includes(query) || description.includes(query)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
     </script>
+
 
 </body>
 

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top AI Tools for Content Creation & Productivity | 03 For Creators</title>
+    <meta name="description"
+        content="Discover the best AI tools for content creation, writing, image generation, video editing, and productivity. Explore trending AI software to boost your workflow.">
+    <meta name="keywords"
+        content="AI tools, artificial intelligence, content creation tools, writing AI, image generation AI, video editing AI, productivity tools, trending AI, best AI software">
+    <meta name="author" content="03 For Creators">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8639711686131039"
+     crossorigin="anonymous"></script>
+    <!-- Standard Favicon -->
+    <link rel="icon" href="/favicon.ico" style="border-radius: 50%" type="image/x-icon">
+
+    <!-- PNG Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" style="border-radius: 50%" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" style="border-radius: 50%" href="/favicon-32x32.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" style="border-radius: 50%" href="/apple-touch-icon.png">
+
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" style="border-radius: 50%" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" style="border-radius: 50%" href="/android-chrome-512x512.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .tools-container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .tools-container h1 {
+            font-size: 2.5rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .tool-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .tool-card i {
+            font-size: 2rem;
+            color: #64b5f6;
+            margin-bottom: 15px;
+        }
+
+        .tool-card h3 {
+            font-size: 1.25rem;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .tool-card p {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .tool-card a {
+            color: #64b5f6;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .tool-card a:hover {
+            color: #42a5f5;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="logo-container">
+            <i class="fas fa-code fa-lg"></i>
+            <span>03 Dev Team</span>
+            <i class="fas fa-times close-btn" onclick="toggleSidebar()"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="reels.html"><i class="fas fa-film"></i> Reels Bundles</a></li>
+            <li><a href="#" class="active"><i class="fas fa-robot"></i> AI Tools</a></li>
+            <li><a href="apk.html" ><i class="fas fa-mobile-alt"></i> APK Downloads</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="menu-toggle">
+                <i class="fas fa-bars" onclick="toggleSidebar()"></i>
+            </div>
+            <div class="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search AI tools..." id="searchTools">
+            </div>
+        </header>
+
+        <main>
+            <div class="tools-container">
+                <h1>AI Tools for Content Creation</h1>
+                <div class="tool-grid" id="toolsGrid">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 03 Dev Team. All rights reserved.</p>
+                <nav>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.body.classList.toggle('sidebar-open');
+        }
+
+        const toolsData = [
+            { name: 'ChatGPT', description: 'AI chatbot for text generation.', url: 'https://openai.com/chatgpt', icon: 'fas fa-pen-nib' },
+            { name: 'Midjourney', description: 'AI image generation from text.', url: 'https://www.midjourney.com/', icon: 'fas fa-image' },
+            { name: 'Pictory.ai', description: 'Convert long content to short videos.', url: 'https://pictory.ai/', icon: 'fas fa-play' },
+            { name: 'PixVerse', description: 'AI-powered image to video editing suite.', url: 'https://app.pixverse.ai', icon: 'fas fa-video' },
+            { name: 'Murf AI', description: 'Realistic AI voice generator.', url: 'https://murf.ai/', icon: 'fas fa-microphone-alt' },
+            { name: 'Jasper', description: 'AI writing assistant for marketing.', url: 'https://www.jasper.ai/', icon: 'fas fa-magic' },
+            { name: 'Soundful', description: 'AI music generator for royalty-free music.', url: 'https://soundful.com/', icon: 'fas fa-music' },
+            { name: 'RunwayML', description: 'AI-powered video editing suite.', url: 'https://runwayml.com/', icon: 'fas fa-video' },
+            { name: 'Rytr', description: 'AI writing assistant for various content.', url: 'https://rytr.me/', icon: 'fas fa-comment-dots' },
+            { name: 'DALL-E 2', description: 'Create realistic images from natural language.', url: 'https://openai.com/dall-e-2/', icon: 'fas fa-paint-brush' },
+            { name: 'Descript', description: 'Audio and video editing with AI.', url: 'https://descript.com/', icon: 'fas fa-podcast' },
+            { name: 'Copy.ai', description: 'AI-powered copywriting tool.', url: 'https://www.copy.ai/', icon: 'fas fa-file-alt' },
+            { name: 'Surfer SEO', description: 'AI SEO tool for content optimization.', url: 'https://surferseo.com/', icon: 'fas fa-chart-bar' },
+            { name: 'QuillBot', description: 'Paraphrasing and grammar checker.', url: 'https://quillbot.com/', icon: 'fas fa-edit' },
+            { name: 'Notion AI', description: 'AI integrated into Notion for writing.', url: 'https://www.notion.so/product/ai', icon: 'fas fa-lightbulb' },
+            { name: 'Synthesia.io', description: 'AI video generation with avatars.', url: 'https://www.synthesia.io/', icon: 'fas fa-robot' },
+            { name: 'Play.ht', description: 'Realistic AI text-to-speech.', url: 'https://play.ht/', icon: 'fas fa-volume-up' },
+            { name: 'Wordtune', description: 'AI writing assistant for rephrasing.', url: 'https://www.wordtune.com/', icon: 'fas fa-align-left' },
+            { name: 'VEED.IO', description: 'Online video editor with AI tools.', url: 'https://veed.io/', icon: 'fas fa-photo-video' },
+            { name: 'Google AI Bard', description: 'Googles conversational AI service.', url: 'https://bard.google.com/', icon: 'fas fa-globe' },
+            { name: 'Designs.ai', description: 'AI platform for logos, videos, banners.', url: 'https://designs.ai/', icon: 'fas fa-icons' },
+            { name: 'Lex AI', description: 'AI writing assistant for bloggers.', url: 'https://lex.page/', icon: 'fas fa-book-open' },
+            { name: 'Lensa AI', description: 'AI photo editor for avatars.', url: 'https://prisma-ai.com/lensa', icon: 'fas fa-paint-roller' },
+            { name: 'GitHub Copilot', description: 'AI pair programmer.', url: 'https://github.com/features/copilot', icon: 'fas fa-code' },
+            { name: 'Fireflies.ai', description: 'AI meeting assistant for transcription.', url: 'https://fireflies.ai/', icon: 'fas fa-brain' },
+            { name: 'Article Forge', description: 'AI content writer for SEO articles.', url: 'https://www.articleforge.com/', icon: 'fas fa-newspaper' },
+            { name: 'Scalenut', description: 'AI-powered SEO and content marketing platform.', url: 'https://www.scalenut.com/', icon: 'fas fa-search' },
+            { name: 'INK Editor', description: 'AI writing assistant for SEO content.', url: 'https://inkforall.com/', icon: 'fas fa-highlighter' },
+            { name: 'Frase.io', description: 'AI content optimization and research tool.', url: 'https://www.frase.io/', icon: 'fas fa-question-circle' },
+            { name: 'MarketMuse', description: 'AI content planning and optimization.', url: 'https://www.marketmuse.com/', icon: 'fas fa-bullseye' },
+            { name: 'Writer.com', description: 'AI writing platform for consistent brand voice.', url: 'https://writer.com/', icon: 'fas fa-signature' },
+            { name: 'Grammarly', description: 'AI-powered writing assistant for grammar and style.', url: 'https://www.grammarly.com/', icon: 'fas fa-check-double' },
+            { name: 'Otter.ai', description: 'AI transcription and meeting notes.', url: 'https://otter.ai/', icon: 'fas fa-microphone' },
+            { name: 'Krisp', description: 'AI-powered noise cancellation for calls.', url: 'https://krisp.ai/', icon: 'fas fa-headphones' },
+            { name: 'Beautiful.ai', description: 'AI-powered presentation software.', url: 'https://www.beautiful.ai/', icon: 'fas fa-sliders-h' },
+            { name: 'Tome', description: 'AI-powered storytelling format.', url: 'https://tome.app/', icon: 'fas fa-bookmark' },
+            { name: 'Gamma.app', description: 'AI-powered presentation and document creation.', url: 'https://gamma.app/', icon: 'fas fa-file-powerpoint' },
+            { name: 'Simplified', description: 'All-in-one AI content creation platform.', url: 'https://simplified.com/', icon: 'fas fa-layer-group' },
+            { name: 'CapCut', description: 'Free all-in-one video editor with AI features.', url: 'https://www.capcut.com/', icon: 'fas fa-cut' },
+            { name: 'ElevenLabs', description: 'AI voice software for realistic audio.', url: 'https://elevenlabs.io/', icon: 'fas fa-waveform-square' },
+            { name: 'Stable Diffusion', description: 'Open-source AI image generation model.', url: 'https://stablediffusion.com/', icon: 'fas fa-cube' },
+            { name: 'DreamStudio', description: 'Web interface for Stable Diffusion.', url: 'https://dreamstudio.ai/', icon: 'fas fa-palette' },
+            { name: 'Leonardo AI', description: 'AI platform for game assets and creative content.', url: 'https://leonardo.ai/', icon: 'fas fa-shapes' },
+            { name: 'Fotor', description: 'Online photo editor with AI enhancements.', url: 'https://www.fotor.com/', icon: 'fas fa-camera' },
+            { name: 'Luminar AI', description: 'AI-powered photo editing software.', url: 'https://skylum.com/luminar-ai', icon: 'fas fa-image' },
+            { name: 'Topaz Labs', description: 'AI software for photo and video enhancement.', url: 'https://www.topazlabs.com/', icon: 'fas fa-magic' },
+            { name: 'Gigapixel AI', description: 'AI tool for photo upscaling.', url: 'https://www.topazlabs.com/gigapixel-ai', icon: 'fas fa-expand-arrows-alt' },
+            { name: 'VideoProc Converter AI', description: 'AI video processing and conversion.', url: 'https://www.videoproc.com/', icon: 'fas fa-exchange-alt' },
+            { name: 'AVCLabs Video Enhancer AI', description: 'AI for video upscaling and enhancement.', url: 'https://avclabs.com/video-enhancer-ai.html', icon: 'fas fa-arrows-alt-v' },
+            { name: 'Remini', description: 'AI photo enhancer for old and low-quality photos.', url: 'https://remini.ai/', icon: 'fas fa-history' },
+            { name: 'Phonto', description: 'Simple app to add text to photos.', url: 'https://phonto.app/', icon: 'fas fa-font' },
+            { name: 'Canva', description: 'Online design tool with AI features.', url: 'https://www.canva.com/', icon: 'fas fa-palette' },
+            { name: 'Adobe Sensei', description: 'AI technology powering Adobe products.', url: 'https://www.adobe.com/sensei.html', icon: 'fas fa-brain' },
+            { name: 'Firefly (Adobe)', description: 'Generative AI for Adobe Creative Cloud.', url: 'https://firefly.adobe.com/', icon: 'fas fa-fire-alt' },
+            { name: 'Runway Gen-1', description: 'Generative AI for video creation.', url: 'https://runwayml.com/gen1', icon: 'fas fa-film' },
+            { name: 'Pika Labs', description: 'AI for creating and editing videos.', url: 'https://pika.art/', icon: 'fas fa-video-camera' },
+            { name: 'Genmo AI', description: 'Generative AI for creating 3D assets.', url: 'https://genmo.ai/', icon: 'fas fa-cube' },
+            { name: 'Blockade Labs', description: 'AI for generating 360° skyboxes for games.', url: 'https://blockadelabs.com/', icon: 'fas fa-globe-asia' },
+            { name: 'Kaiber AI', description: 'AI for transforming ideas into visual stories.', url: 'https://kaiber.ai/', icon: 'fas fa-eye' },
+            { name: 'Flair AI', description: 'AI tool for branding and marketing content.', url: 'https://flair.ai/', icon: 'fas fa-bullhorn' },
+            { name: 'Ocoya', description: 'AI tool for social media content creation.', url: 'https://www.ocoya.com/', icon: 'fas fa-share-alt' },
+            { name: 'Buffer', description: 'Social media management platform with AI insights.', url: 'https://buffer.com/', icon: 'fas fa-chart-line' },
+            { name: 'Hootsuite', description: 'Social media management with AI assistance.', url: 'https://www.hootsuite.com/', icon: 'fas fa-hashtag' },
+            { name: 'Later', description: 'Social media scheduling with AI features.', url: 'https://later.com/', icon: 'fas fa-calendar-alt' },
+            { name: 'Planoly', description: 'Social media planning with AI tools.', url: 'https://www.planoly.com/', icon: 'fas fa-th' },
+            { name: 'Linkin.bio by Later', description: 'Tool to link multiple links in Instagram bio.', url: 'https://later.com/linkinbio/', icon: 'fas fa-link' },
+            { name: 'Taplink', description: 'Tool to create multi-link pages for social media.', url: 'https://taplink.cc/', icon: 'fas fa-network-wired' },
+            { name: 'Bio.fm', description: 'Create smart pages for your social media bios.', url: 'https://bio.fm/', icon: 'fas fa-address-card' },
+            { name: 'Metricool', description: 'Social media analytics and management with AI.', url: 'https://metricool.com/', icon: 'fas fa-chart-pie' },
+            { name: 'Brandwatch', description: 'Social listening and analytics platform.', url: 'https://www.brandwatch.com/', icon: 'fas fa-ear-listen' },
+            { name: 'Talkwalker', description: 'Social listening and market intelligence.', url: 'https://www.talkwalker.com/', icon: 'fas fa-comments' },
+            { name: 'BuzzSumo', description: 'Content research and discovery platform.', url: 'https://buzzsumo.com/', icon: 'fas fa-fire' },
+            { name: 'Ahrefs', description: 'SEO toolset for link building and keyword research.', url: 'https://ahrefs.com/', icon: 'fas fa-link' },
+            { name: 'SEMrush', description: 'Online visibility management platform.', url: 'https://www.semrush.com/', icon: 'fas fa-signal' },
+            { name: 'Moz', description: 'SEO software and resources.', url: 'https://moz.com/', icon: 'fas fa-search-plus' },
+            { name: 'Ubersuggest', description: 'SEO tool for keyword research and content ideas.', url: 'https://neilpatel.com/ubersuggest/', icon: 'fas fa-key' },
+            { name: 'AnswerThePublic', description: 'Keyword research tool for questions.', url: 'https://answerthepublic.com/', icon: 'fas fa-question' },
+            { name: 'Surfer AI', description: 'AI-powered content optimization.', url: 'https://surferseo.com/ai/', icon: 'fas fa-atom' },
+            { name: 'Clearscope', description: 'AI content optimization platform.', url: 'https://www.clearscope.io/', icon: 'fas fa-check-circle' },
+            { name: 'Outranking.io', description: 'AI-powered content creation and SEO.', url: 'https://outranking.io/', icon: 'fas fa-rocket' },
+            { name: 'GrowthBar', description: 'AI SEO tool for content and keyword research.', url: 'https://www.growthbar.com/', icon: 'fas fa-arrow-up' },
+            { name: 'SE Ranking', description: 'All-in-one SEO software.', url: 'https://seranking.com/', icon: 'fas fa-list-ol' },
+            { name: 'SpyFu', description: 'Competitor SEO analysis tool.', url: 'https://www.spyfu.com/', icon: 'fas fa-binoculars' },
+            { name: 'CognitiveSEO', description: 'SEO analysis and link building tools.', url: 'https://cognitiveseo.com/', icon: 'fas fa-project-diagram' },
+            { name: 'Majestic SEO', description: 'Link intelligence tools for SEO.', url: 'https://majestic.com/', icon: 'fas fa-share-alt-square' },
+            { name: 'Screaming Frog', description: 'Website crawler for SEO audits.', url: 'https://www.screamingfrog.co.uk/', icon: 'fas fa-frog' },
+            { name: 'PageSpeed Insights', description: 'Google tool to analyze page speed.', url: 'https://pagespeed.web.dev/', icon: 'fas fa-tachometer-alt' },
+            { name: 'GTmetrix', description: 'Website speed and performance analysis.', url: 'https://gtmetrix.com/', icon: 'fas fa-bolt' },
+            { name: 'WebPageTest', description: 'Website performance testing tool.', url: 'https://www.webpagetest.org/', icon: 'fas fa-chart-line' },
+            { name: 'Cloudflare', description: 'Web security and performance.', url: 'https://www.cloudflare.com/', icon: 'fas fa-cloud' },
+            { name: 'Sucuri', description: 'Website security and malware removal.', url: 'https://sucuri.net/', icon: 'fas fa-shield-alt' },
+            { name: 'Akamai', description: 'Content delivery network and cloud services.', url: 'https://www.akamai.com/', icon: 'fas fa-server' },
+            { name: 'Incapsula', description: 'Website security and DDoS protection.', url: 'https://www.imperva.com/products/web-application-security/incapsula/', icon: 'fas fa-lock' },
+            { name: 'Wordfence', description: 'WordPress security plugin.', url: 'https://www.wordfence.com/', icon: 'fas fa-wordpress-simple' },
+            { name: 'Yoast SEO', description: 'WordPress SEO plugin.', url: 'https://yoast.com/', icon: 'fas fa-certificate' },
+            { name: 'Rank Math SEO', description: 'WordPress SEO plugin.', url: 'https://rankmath.com/', icon: 'fas fa-hashtag' },
+            { name: 'All in One SEO Pack', description: 'WordPress SEO plugin.', url: 'https://aioseo.com/', icon: 'fas fa-cog' },
+            { name: 'W3 Total Cache', description: 'WordPress caching plugin.', url: 'https://www.boldgrid.com/w3-total-cache/', icon: 'fas fa-bolt' },
+            { name: 'WP Rocket', description: 'WordPress caching plugin.', url: 'https://wp-rocket.me/', icon: 'fas fa-rocket' },
+            { name: 'Smush', description: 'WordPress image optimization plugin.', url: 'https://wpmudev.com/project/wp-smush-pro/', icon: 'fas fa-image' },
+            { name: 'TinyPNG', description: 'Online image compression tool.', url: 'https://tinypng.com/', icon: 'fas fa-compress-alt' },
+            { name: 'ShortPixel', description: 'Image optimization and CDN.', url: 'https://shortpixel.com/', icon: 'fas fa-image' },
+            { name: 'Cloudinary', description: 'Media management platform.', url: 'https://cloudinary.com/', icon: 'fas fa-cloud-upload-alt' },
+            { name: 'Imgix', description: 'Image optimization and delivery.', url: 'https://www.imgix.com/', icon: 'fas fa-image' },
+            { name: 'Vimeo', description: 'Video hosting platform.', url: 'https://vimeo.com/', icon: 'fab fa-vimeo' },
+            { name: 'Wistia', description: 'Video hosting for business.', url: 'https://wistia.com/', icon: 'fas fa-play-circle' },
+            { name: 'Brightcove', description: 'Enterprise video platform.', url: 'https://www.brightcove.com/', icon: 'fas fa-tv' },
+            { name: 'Sprout Social', description: 'Social media management platform.', url: 'https://sproutsocial.com/', icon: 'fas fa-share-alt' },
+            { name: 'AgoraPulse', description: 'Social media management tools.', url: 'https://www.agorapulse.com/', icon: 'fas fa-chart-bar' },
+            { name: 'Sendible', description: 'Social media management platform.', url: 'https://www.sendible.com/', icon: 'fas fa-envelope-square' },
+            { name: 'eClincher', description: 'Social media management solution.', url: 'https://eclincher.com/', icon: 'fas fa-calendar-check' },
+            { name: 'Zoho Social', description: 'Social media management for businesses.', url: 'https://www.zoho.com/social/', icon: 'fas fa-users' },
+            { name: 'HubSpot Marketing Hub', description: 'Marketing automation platform.', url: 'https://www.hubspot.com/products/marketing', icon: 'fas fa-chart-area' },
+            { name: 'Marketo Engage', description: 'Marketing automation software.', url: 'https://business.adobe.com/products/marketo/marketing-automation.html', icon: 'fas fa-envelope-open-text' },
+            { name: 'Pardot (Salesforce)', description: 'B2B marketing automation.', url: 'https://www.salesforce.com/products/pardot/overview/', icon: 'fab fa-salesforce' },
+            { name: 'ActiveCampaign', description: 'Email marketing and automation.', url: 'https://www.activecampaign.com/', icon: 'fas fa-envelope' },
+            { name: 'Mailchimp', description: 'Email marketing platform.', url: 'https://mailchimp.com/', icon: 'fas fa-mail-bulk' },
+            { name: 'GetResponse', description: 'Email marketing and online marketing platform.', url: 'https://www.getresponse.com/', icon: 'fas fa-envelope-open' },
+            { name: 'ConvertKit', description: 'Email marketing for creators.', url: 'https://convertkit.com/', icon: 'fas fa-tag' },
+            { name: 'SendGrid', description: 'Email delivery service.', url: 'https://sendgrid.com/', icon: 'fas fa-paper-plane' },
+            { name: 'Twilio', description: 'Customer engagement platform.', url: 'https://www.twilio.com/', icon: 'fas fa-comment-dots' },
+            { name: 'Slack', description: 'Business communication platform.', url: 'https://slack.com/', icon: 'fab fa-slack' },
+            { name: 'Microsoft Teams', description: 'Collaboration and communication platform.', url: 'https://www.microsoft.com/en-us/microsoft-teams', icon: 'fab fa-microsoft' },
+            { name: 'Zoom', description: 'Video conferencing service.', url: 'https://zoom.us/', icon: 'fas fa-video' },
+            { name: 'Google Meet', description: 'Video conferencing by Google.', url: 'https://meet.google.com/', icon: 'fas fa-users' },
+            { name: 'Trello', description: 'Project management tool.', url: 'https://trello.com/', icon: 'fab fa-trello' },
+            { name: 'Asana', description: 'Work management platform.', url: 'https://asana.com/', icon: 'fas fa-tasks' },
+            { name: 'Monday.com', description: 'Work OS for teams.', url: 'https://monday.com/', icon: 'fas fa-columns' },
+            { name: 'Basecamp', description: 'Project management and team communication.', url: 'https://basecamp.com/', icon: 'fas fa-campground' },
+            { name: 'ClickUp', description: 'All-in-one productivity platform.', url: 'https://clickup.com/', icon: 'fas fa-check-square' },
+            { name: 'Notion', description: 'All-in-one workspace.', url: 'https://www.notion.so/', icon: 'fas fa-sticky-note' },
+            { name: 'Evernote', description: 'Note-taking app.', url: 'https://evernote.com/', icon: 'fas fa-pen' },
+            { name: 'Google Keep', description: 'Note-taking service by Google.', url: 'https://keep.google.com/', icon: 'fas fa-lightbulb' },
+            { name: 'Pocket', description: 'Save articles and videos to watch later.', url: 'https://getpocket.com/', icon: 'fas fa-archive' },
+            { name: 'Instapaper', description: 'Save articles for reading later.', url: 'https://www.instapaper.com/', icon: 'fas fa-book' },
+            { name: 'IFTTT', description: 'Automation platform for connecting apps.', url: 'https://ifttt.com/', icon: 'fas fa-link' },
+            { name: 'Zapier', description: 'Automation tool to connect apps and services.', url: 'https://zapier.com/', icon: 'fas fa-bolt' },
+            { name: 'Airtable', description: 'Spreadsheet-database hybrid.', url: 'https://www.airtable.com/', icon: 'fas fa-table' },
+            { name: 'Coda', description: 'All-in-one document platform.', url: 'https://coda.io/', icon: 'fas fa-file-alt' },
+            { name: 'Google Workspace', description: 'Productivity tools by Google.', url: 'https://workspace.google.com/', icon: 'fab fa-google-drive' },
+            { name: 'Microsoft 365', description: 'Productivity suite by Microsoft.', url: 'https://www.microsoft.com/en-us/microsoft-365', icon: 'fab fa-microsoft-office' },
+            { name: 'Figma', description: 'Collaborative interface design tool.', url: 'https://www.figma.com/', icon: 'fab fa-figma' },
+            { name: 'Sketch', description: 'Digital design toolkit for Mac.', url: 'https://www.sketch.com/', icon: 'fas fa-pencil-ruler' },
+            { name: 'Adobe XD', description: 'UX and UI design tool by Adobe.', url: 'https://www.adobe.com/products/xd.html', icon: 'fab fa-adobe' },
+            { name: 'Procreate', description: 'Digital painting app for iPad.', url: 'https://procreate.com/', icon: 'fas fa-paint-brush' },
+            { name: 'Affinity Designer', description: 'Vector graphics editor.', url: 'https://affinity.serif.com/en-us/designer/', icon: 'fas fa-vector-square' },
+            { name: 'DaVinci Resolve', description: 'Professional video editing software.', url: 'https://www.blackmagicdesign.com/products/davinciresolve/', icon: 'fas fa-film' },
+            { name: 'Adobe Premiere Pro', description: 'Industry-standard video editing software.', url: 'https://www.adobe.com/products/premiere-pro.html', icon: 'fab fa-adobe' },
+            { name: 'Final Cut Pro', description: 'Professional video editing for macOS.', url: 'https://www.apple.com/final-cut-pro/', icon: 'fas fa-video' },
+            { name: 'Audacity', description: 'Free and open-source audio editor.', url: 'https://www.audacityteam.org/', icon: 'fas fa-wave-square' },
+            { name: 'Adobe Audition', description: 'Professional audio editing software.', url: 'https://www.adobe.com/products/audition.html', icon: 'fab fa-adobe' },
+            { name: 'Logic Pro X', description: 'Professional audio production for macOS.', url: 'https://www.apple.com/logic-pro/', icon: 'fas fa-headphones' },
+            { name: 'GarageBand', description: 'Free music creation app by Apple.', url: 'https://www.apple.com/garageband/', icon: 'fas fa-guitar' },
+            { name: 'Blender', description: 'Free and open-source 3D creation suite.', url: 'https://www.blender.org/', icon: 'fas fa-dice-d6' },
+            { name: 'Unreal Engine', description: 'Real-time 3D creation tool.', url: 'https://www.unrealengine.com/en-US/', icon: 'fab fa-unreal-engine' },
+            { name: 'Unity', description: 'Real-time 3D development platform.', url: 'https://unity.com/', icon: 'fab fa-unity' }
+        ];
+
+        const searchInput = document.getElementById('searchTools');
+        const toolsGrid = document.getElementById('toolsGrid');
+
+        function displayTools(tools) {
+            toolsGrid.innerHTML = '';
+            if (tools.length === 0) {
+                toolsGrid.innerHTML = '<p>No tools found matching your search.</p>';
+                return;
+            }
+            tools.forEach(tool => {
+                const card = document.createElement('div');
+                card.classList.add('tool-card');
+                card.innerHTML = `
+                    <i class="${tool.icon}"></i>
+                    <h3>${tool.name}</h3>
+                    <p>${tool.description}</p>
+                    <a href="${tool.url}" target="_blank">Go to Website</a>
+                `;
+                toolsGrid.appendChild(card);
+            });
+        }
+
+        searchInput.addEventListener('input', function () {
+            const query = this.value.toLowerCase();
+            const filteredTools = toolsData.filter(tool =>
+                tool.name.toLowerCase().includes(query) ||
+                tool.description.toLowerCase().includes(query)
+            );
+            displayTools(filteredTools);
+        });
+
+        // Initial display of all tools
+        displayTools(toolsData);
+    </script>
+
+</body>
+
+</html>
