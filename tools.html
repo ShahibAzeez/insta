@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8639711686131039"
+     crossorigin="anonymous"></script>
     <style>
         .tools-container {
             max-width: 960px;
@@ -113,6 +115,7 @@
             <li><a href="apk.html" ><i class="fas fa-mobile-alt"></i> APK Downloads</a></li>
             <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
             <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            <li><a href="terms.html"><i class="fas fa-file-alt"></i> Terms of Service</a></li>
         </ul>
     </div>
 
@@ -153,57 +156,60 @@
         }
 
         const toolsData = [
-            { name: 'ChatGPT', description: 'AI chatbot for text generation.', url: 'https://openai.com/chatgpt', icon: 'fas fa-pen-nib' },
-            { name: 'Midjourney', description: 'AI image generation from text.', url: 'https://www.midjourney.com/', icon: 'fas fa-image' },
-            { name: 'Pictory.ai', description: 'Convert long content to short videos.', url: 'https://pictory.ai/', icon: 'fas fa-play' },
-            { name: 'PixVerse', description: 'AI-powered image to video editing suite.', url: 'https://app.pixverse.ai', icon: 'fas fa-video' },
-            { name: 'Murf AI', description: 'Realistic AI voice generator.', url: 'https://murf.ai/', icon: 'fas fa-microphone-alt' },
-            { name: 'Jasper', description: 'AI writing assistant for marketing.', url: 'https://www.jasper.ai/', icon: 'fas fa-magic' },
-            { name: 'Soundful', description: 'AI music generator for royalty-free music.', url: 'https://soundful.com/', icon: 'fas fa-music' },
-            { name: 'RunwayML', description: 'AI-powered video editing suite.', url: 'https://runwayml.com/', icon: 'fas fa-video' },
-            { name: 'Rytr', description: 'AI writing assistant for various content.', url: 'https://rytr.me/', icon: 'fas fa-comment-dots' },
-            { name: 'DALL-E 2', description: 'Create realistic images from natural language.', url: 'https://openai.com/dall-e-2/', icon: 'fas fa-paint-brush' },
-            { name: 'Descript', description: 'Audio and video editing with AI.', url: 'https://descript.com/', icon: 'fas fa-podcast' },
-            { name: 'Copy.ai', description: 'AI-powered copywriting tool.', url: 'https://www.copy.ai/', icon: 'fas fa-file-alt' },
-            { name: 'Surfer SEO', description: 'AI SEO tool for content optimization.', url: 'https://surferseo.com/', icon: 'fas fa-chart-bar' },
-            { name: 'QuillBot', description: 'Paraphrasing and grammar checker.', url: 'https://quillbot.com/', icon: 'fas fa-edit' },
-            { name: 'Notion AI', description: 'AI integrated into Notion for writing.', url: 'https://www.notion.so/product/ai', icon: 'fas fa-lightbulb' },
-            { name: 'Synthesia.io', description: 'AI video generation with avatars.', url: 'https://www.synthesia.io/', icon: 'fas fa-robot' },
-            { name: 'Play.ht', description: 'Realistic AI text-to-speech.', url: 'https://play.ht/', icon: 'fas fa-volume-up' },
-            { name: 'Wordtune', description: 'AI writing assistant for rephrasing.', url: 'https://www.wordtune.com/', icon: 'fas fa-align-left' },
-            { name: 'VEED.IO', description: 'Online video editor with AI tools.', url: 'https://veed.io/', icon: 'fas fa-photo-video' },
-            { name: 'Google AI Bard', description: 'Googles conversational AI service.', url: 'https://bard.google.com/', icon: 'fas fa-globe' },
-            { name: 'Designs.ai', description: 'AI platform for logos, videos, banners.', url: 'https://designs.ai/', icon: 'fas fa-icons' },
-            { name: 'Lex AI', description: 'AI writing assistant for bloggers.', url: 'https://lex.page/', icon: 'fas fa-book-open' },
-            { name: 'Lensa AI', description: 'AI photo editor for avatars.', url: 'https://prisma-ai.com/lensa', icon: 'fas fa-paint-roller' },
-            { name: 'GitHub Copilot', description: 'AI pair programmer.', url: 'https://github.com/features/copilot', icon: 'fas fa-code' },
-            { name: 'Fireflies.ai', description: 'AI meeting assistant for transcription.', url: 'https://fireflies.ai/', icon: 'fas fa-brain' },
-            { name: 'Article Forge', description: 'AI content writer for SEO articles.', url: 'https://www.articleforge.com/', icon: 'fas fa-newspaper' },
-            { name: 'Scalenut', description: 'AI-powered SEO and content marketing platform.', url: 'https://www.scalenut.com/', icon: 'fas fa-search' },
-            { name: 'INK Editor', description: 'AI writing assistant for SEO content.', url: 'https://inkforall.com/', icon: 'fas fa-highlighter' },
-            { name: 'Frase.io', description: 'AI content optimization and research tool.', url: 'https://www.frase.io/', icon: 'fas fa-question-circle' },
-            { name: 'MarketMuse', description: 'AI content planning and optimization.', url: 'https://www.marketmuse.com/', icon: 'fas fa-bullseye' },
-            { name: 'Writer.com', description: 'AI writing platform for consistent brand voice.', url: 'https://writer.com/', icon: 'fas fa-signature' },
-            { name: 'Grammarly', description: 'AI-powered writing assistant for grammar and style.', url: 'https://www.grammarly.com/', icon: 'fas fa-check-double' },
-            { name: 'Otter.ai', description: 'AI transcription and meeting notes.', url: 'https://otter.ai/', icon: 'fas fa-microphone' },
-            { name: 'Krisp', description: 'AI-powered noise cancellation for calls.', url: 'https://krisp.ai/', icon: 'fas fa-headphones' },
-            { name: 'Beautiful.ai', description: 'AI-powered presentation software.', url: 'https://www.beautiful.ai/', icon: 'fas fa-sliders-h' },
-            { name: 'Tome', description: 'AI-powered storytelling format.', url: 'https://tome.app/', icon: 'fas fa-bookmark' },
-            { name: 'Gamma.app', description: 'AI-powered presentation and document creation.', url: 'https://gamma.app/', icon: 'fas fa-file-powerpoint' },
-            { name: 'Simplified', description: 'All-in-one AI content creation platform.', url: 'https://simplified.com/', icon: 'fas fa-layer-group' },
-            { name: 'CapCut', description: 'Free all-in-one video editor with AI features.', url: 'https://www.capcut.com/', icon: 'fas fa-cut' },
-            { name: 'ElevenLabs', description: 'AI voice software for realistic audio.', url: 'https://elevenlabs.io/', icon: 'fas fa-waveform-square' },
-            { name: 'Stable Diffusion', description: 'Open-source AI image generation model.', url: 'https://stablediffusion.com/', icon: 'fas fa-cube' },
-            { name: 'DreamStudio', description: 'Web interface for Stable Diffusion.', url: 'https://dreamstudio.ai/', icon: 'fas fa-palette' },
-            { name: 'Leonardo AI', description: 'AI platform for game assets and creative content.', url: 'https://leonardo.ai/', icon: 'fas fa-shapes' },
-            { name: 'Fotor', description: 'Online photo editor with AI enhancements.', url: 'https://www.fotor.com/', icon: 'fas fa-camera' },
-            { name: 'Luminar AI', description: 'AI-powered photo editing software.', url: 'https://skylum.com/luminar-ai', icon: 'fas fa-image' },
-            { name: 'Topaz Labs', description: 'AI software for photo and video enhancement.', url: 'https://www.topazlabs.com/', icon: 'fas fa-magic' },
-            { name: 'Gigapixel AI', description: 'AI tool for photo upscaling.', url: 'https://www.topazlabs.com/gigapixel-ai', icon: 'fas fa-expand-arrows-alt' },
-            { name: 'VideoProc Converter AI', description: 'AI video processing and conversion.', url: 'https://www.videoproc.com/', icon: 'fas fa-exchange-alt' },
-            { name: 'AVCLabs Video Enhancer AI', description: 'AI for video upscaling and enhancement.', url: 'https://avclabs.com/video-enhancer-ai.html', icon: 'fas fa-arrows-alt-v' },
-            { name: 'Remini', description: 'AI photo enhancer for old and low-quality photos.', url: 'https://remini.ai/', icon: 'fas fa-history' },
-            { name: 'Phonto', description: 'Simple app to add text to photos.', url: 'https://phonto.app/', icon: 'fas fa-font' },
+            { name: 'ChatGPT', description: 'AI chatbot for text generation.', url: 'chatgpt.html', icon: 'fas fa-pen-nib' },
+            { name: 'Midjourney', description: 'AI image generation from text.', url: 'midjourney.html', icon: 'fas fa-image' },
+            { name: 'Pictory.ai', description: 'Convert long content to short videos.', url: 'pictoryai.html', icon: 'fas fa-play' },
+            { name: 'PixVerse', description: 'AI-powered image to video editing suite.', url: 'PixVerse.html', icon: 'fas fa-video' },
+            { name: 'Murf AI', description: 'Realistic AI voice generator.', url: 'murfai.html', icon: 'fas fa-microphone-alt' },
+            { name: 'Jasper', description: 'AI writing assistant for marketing.', url: 'jasper.html', icon: 'fas fa-magic' },
+            { name: 'Soundful', description: 'AI music generator for royalty-free music.', url: 'soundful.html', icon: 'fas fa-music' },
+            { name: 'RunwayML', description: 'AI-powered video editing suite.', url: 'runwayml.html', icon: 'fas fa-video' },
+            { name: 'Rytr', description: 'AI writing assistant for various content.', url: 'ryter.html', icon: 'fas fa-comment-dots' },
+            { name: 'Google Gemini', description: 'AI chatbot for text generation.', url: 'Gemini.html', icon: 'fas fa-pen-nib' },
+            { name: 'DALL-E 2', description: 'Create realistic images from natural language.', url: 'dalle2.html', icon: 'fas fa-paint-brush' },
+            { name: 'Descript', description: 'Audio and video editing with AI.', url: 'descript.html', icon: 'fas fa-podcast' },
+            { name: 'Copy.ai', description: 'AI-powered copywriting tool.', url: 'copyai.html', icon: 'fas fa-file-alt' },
+            { name: 'Surfer SEO', description: 'AI SEO tool for content optimization.', url: 'surferseo.html', icon: 'fas fa-chart-bar' },
+            { name: 'QuillBot', description: 'Paraphrasing and grammar checker.', url: 'quillbot.html', icon: 'fas fa-edit' },
+            { name: 'Notion AI', description: 'AI integrated into Notion for writing.', url: 'notionai.html', icon: 'fas fa-lightbulb' },
+            { name: 'Synthesia.io', description: 'AI video generation with avatars.', url: 'synthesiaio.html', icon: 'fas fa-robot' },
+            { name: 'Play.ht', description: 'Realistic AI text-to-speech.', url: 'playht.html', icon: 'fas fa-volume-up' },
+            { name: 'Vistasocial', description: 'Social media management platform.', url: 'vistasocial.html', icon: 'fas fa-envelope-square' },
+            { name: 'Wordtune', description: 'AI writing assistant for rephrasing.', url: 'wordtune.html', icon: 'fas fa-align-left' },
+            { name: 'VEED.IO', description: 'Online video editor with AI tools.', url: 'veedio.html', icon: 'fas fa-photo-video' },
+            { name: 'Google AI Bard', description: 'Googles conversational AI service.', url: 'bardgoogle.html', icon: 'fas fa-globe' },
+            { name: 'Designs.ai', description: 'AI platform for logos, videos, banners.', url: 'designsai.html', icon: 'fas fa-icons' },
+            { name: 'Lex AI', description: 'AI writing assistant for bloggers.', url: 'lex.html', icon: 'fas fa-book-open' },
+            { name: 'Lensa AI', description: 'AI photo editor for avatars.', url: 'lensa.html', icon: 'fas fa-paint-roller' },
+            { name: 'GitHub Copilot', description: 'AI pair programmer.', url: 'copilot.html', icon: 'fas fa-code' },
+            { name: 'Fireflies.ai', description: 'AI meeting assistant for transcription.', url: 'firefliesai.html', icon: 'fas fa-brain' },
+            { name: 'Article Forge', description: 'AI content writer for SEO articles.', url: 'articleforge.html', icon: 'fas fa-newspaper' },
+            { name: 'Scalenut', description: 'AI-powered SEO and content marketing platform.', url: 'scalenut.html', icon: 'fas fa-search' },
+            { name: 'INK Editor', description: 'AI writing assistant for SEO content.', url: 'inkforall.html', icon: 'fas fa-highlighter' },
+            { name: 'Frase.io', description: 'AI content optimization and research tool.', url: 'fraseio.html', icon: 'fas fa-question-circle' },
+            { name: 'MarketMuse', description: 'AI content planning and optimization.', url: 'marketmuse.html', icon: 'fas fa-bullseye' },
+            { name: 'Writer.com', description: 'AI writing platform for consistent brand voice.', url: 'writercom.html', icon: 'fas fa-signature' },
+            { name: 'Grammarly', description: 'AI-powered writing assistant for grammar and style.', url: 'grammarly.html', icon: 'fas fa-check-double' },
+            // yha se meta tags use kiye gye h
+            { name: 'Otter.ai', description: 'AI transcription and meeting notes.', url: 'otterai.html', icon: 'fas fa-microphone' },
+            { name: 'Krisp', description: 'AI-powered noise cancellation for calls.', url: 'krispai.html', icon: 'fas fa-headphones' },
+            { name: 'Beautiful.ai', description: 'AI-powered presentation software.', url: 'beautifulai.html', icon: 'fas fa-sliders-h' },
+            { name: 'Tome', description: 'AI-powered storytelling format.', url: 'tomeapp.html', icon: 'fas fa-bookmark' },
+            { name: 'Gamma.app', description: 'AI-powered presentation and document creation.', url: 'gammaapp.html', icon: 'fas fa-file-powerpoint' },
+            { name: 'Simplified', description: 'All-in-one AI content creation platform.', url: 'simplified.html', icon: 'fas fa-layer-group' },
+            { name: 'CapCut', description: 'Free all-in-one video editor with AI features.', url: 'capcut.html', icon: 'fas fa-cut' },
+            { name: 'ElevenLabs', description: 'AI voice software for realistic audio.', url: 'elevenlabsio.html', icon: 'fas fa-waveform-square' },
+            { name: 'Stable Diffusion', description: 'Open-source AI image generation model.', url: 'stablediffusion.html', icon: 'fas fa-cube' },
+            { name: 'DreamStudio', description: 'Web interface for Stable Diffusion.', url: 'dreamstudioai.html', icon: 'fas fa-palette' },
+            { name: 'Leonardo AI', description: 'AI platform for game assets and creative content.', url: 'leonardoai.html', icon: 'fas fa-shapes' },
+            { name: 'Fotor', description: 'Online photo editor with AI enhancements.', url: 'fotor.html', icon: 'fas fa-camera' },
+            { name: 'Luminar AI', description: 'AI-powered photo editing software.', url: 'luminarai.html', icon: 'fas fa-image' },
+            { name: 'Topaz Labs', description: 'AI software for photo and video enhancement.', url: 'Topazlabs.html', icon: 'fas fa-magic' },
+            { name: 'Gigapixel AI', description: 'AI tool for photo upscaling.', url: 'gigapixelai.html', icon: 'fas fa-expand-arrows-alt' },
+            { name: 'VideoProc Converter AI', description: 'AI video processing and conversion.', url: 'videoproc.html', icon: 'fas fa-exchange-alt' },
+            { name: 'AVCLabs Video Enhancer AI', description: 'AI for video upscaling and enhancement.', url: 'avclabsvideoenhancerai.html', icon: 'fas fa-arrows-alt-v' },
+            { name: 'Remini', description: 'AI photo enhancer for old and low-quality photos.', url: 'remini.html', icon: 'fas fa-history' },
+            { name: 'Phonto', description: 'Simple app to add text to photos.', url: 'phonto.html', icon: 'fas fa-font' },
             { name: 'Canva', description: 'Online design tool with AI features.', url: 'https://www.canva.com/', icon: 'fas fa-palette' },
             { name: 'Adobe Sensei', description: 'AI technology powering Adobe products.', url: 'https://www.adobe.com/sensei.html', icon: 'fas fa-brain' },
             { name: 'Firefly (Adobe)', description: 'Generative AI for Adobe Creative Cloud.', url: 'https://firefly.adobe.com/', icon: 'fas fa-fire-alt' },
@@ -327,7 +333,7 @@
                     <i class="${tool.icon}"></i>
                     <h3>${tool.name}</h3>
                     <p>${tool.description}</p>
-                    <a href="${tool.url}" target="_blank">Go to Website</a>
+                    <a href="${tool.url}" ">Explore</a>
                 `;
                 toolsGrid.appendChild(card);
             });
